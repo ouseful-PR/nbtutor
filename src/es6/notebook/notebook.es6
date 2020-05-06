@@ -49,7 +49,7 @@ export class VisualizedCell {
         this.$nbtutor_canvas = $("<div/>")
             .attr("class", "nbtutor-canvas")
             .attr("id", "c-" + uuid.v4())
-            .addClass("nbtutor-hidden");
+            .addClass("nbtutor-hidden").dialog();
         this.d3Root = d3.select(this.$nbtutor_canvas.toArray()[0]);
 
         this.toolbar = new Toolbar(cell);
